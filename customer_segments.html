@@ -12114,7 +12114,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xc9335c0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xc9645c0&gt;</pre>
 </div>
 
 </div>
@@ -14380,7 +14380,7 @@ iRBCCCGEEEI6QIMlQgghhBBCCOkADZYIIYQQQgghpAP/D4QdgGrRlHuiAAAAAElFTkSuQmCC
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x106a53c8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1072a3c8&gt;</pre>
 </div>
 
 </div>
@@ -20414,7 +20414,10 @@ AZ11WAaigSWOAAAAAElFTkSuQmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>The first and second principal components explain about 72.5% of the total variance in the data.  The first four principal components explain about 92.8% of the total variance of the data.</p>
-<p>The first component depends heavily on mostly three features (Detergents, Grocery and Milk) and moderatly discounts Fresh and Frozen.  The second components depends on Fresh, Frozen and Delicatessen and less on the other three features.  The third components heavily discounts Fresh and moderately discounts Detergent and grocery while moderately weighing the rest of the features.  The fourth component discounts Frozen and detergent while moderately weighing the rest of the features.</p>
+<p>The first principal component represents customers who spend heavily on Milk, Grocery and Detergent, then average spending on Deli then less than average on Fresh and Frozen.</p>
+<p>The second principal component represents customers who spend heavily on Fresh, Frozen and Deli then has above average spending on Milk and Grocery and slightly less than average on Deli.</p>
+<p>The third principal component represents customers who spend very little on Fresh, below average on Detergant and slightly below average on Grocery. Then more heavily on Deli and above average on the rest.</p>
+<p>The fourth principal component represents customers who spend very little on Frozen and below average on Detergant. Then again more heavily on Deli and above average on the rest.</p>
 
 </div>
 </div>
@@ -20671,7 +20674,7 @@ AZ11WAaigSWOAAAAAElFTkSuQmCC
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xf060080&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xe85d160&gt;</pre>
 </div>
 
 </div>
@@ -22839,7 +22842,7 @@ IiIiIiLbYsBDRERERES29f8DO32IIHuy3wMAAAAASUVORK5CYII=
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xf3321d0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xfe514e0&gt;</pre>
 </div>
 
 </div>
@@ -23182,6 +23185,7 @@ My original prediction for point 0 was that it would be a restaurant.  This does
 <p><strong>Answer:</strong>
 Customers that fit in Segment 0 buy higher quantities of fresh perishable food and smaller quantities of the other foods.  This type of customer may respond negatively to a 3 day per week delivery.</p>
 <p>On the other hand, customers that fit in Segment 1 may not mind a 3 day per week delivery as they buy higher quantities of non perishable items and less of fresh items.</p>
+<p>The wholesale distributer can select a small and equal random number of customers from each segment, then apply the A/B test with the new delivery schedule. In other other words, apply the 3 day delivery schedule to this new small sample of customers, then collect feedback after a few weeks.  If a large majority of customers from one of the segments is ok with the new delivery schedule, then you can assume that it would be ok to roll out the new schedule to the rest of the customers from the same segment.</p>
 
 </div>
 </div>
